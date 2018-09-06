@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gopalkrath.androidroomormsample.AddNewTaskActivity"
+    android:padding="10dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtInEdtSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@android:color/holo_blue_dark"
+            android:hint="@string/str_subject"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/txtInEdtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="top"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGray"
+        android:textColor="@android:color/black"
+        android:hint="@string/str_description"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_task_status"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_blue_dark"/>
+    <RadioGroup
+        android:id="@+id/rdgStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <RadioButton
+            android:id="@+id/rdbTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_todo"/>
+        <RadioButton
+            android:id="@+id/rdbDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_done"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="@string/str_save"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
+
